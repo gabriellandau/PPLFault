@@ -1,0 +1,7 @@
+#include "resource.h"
+
+#ifdef _DEBUG
+RES_PAYLOAD RCDATA "..\\x64\\Debug\\DumpShellcode.exe.shellcode"
+#else
+RES_PAYLOAD RCDATA "..\\x64\\Release\\DumpShellcode.exe.shellcode"
+#endif

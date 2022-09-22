@@ -1,0 +1,12 @@
+Shellcode
+ServicesShellcode
+CsrssShellcode
+CurrentTeb
+WhereAmI
+_wcslen
+_RtlInitUnicodeString
+memeq
+FindMyBase
+GetParams
+EndShellcode
+main

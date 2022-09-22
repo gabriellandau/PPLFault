@@ -1,0 +1,7 @@
+#include "resource.h"
+
+#ifdef _DEBUG
+RES_PAYLOAD RCDATA "..\\x64\\Debug\\GMShellcode.exe.shellcode"
+#else
+RES_PAYLOAD RCDATA "..\\x64\\Release\\GMShellcode.exe.shellcode"
+#endif

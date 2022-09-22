@@ -1,0 +1,5 @@
+Shellcode
+WhereAmI
+GetParams
+EndShellcode
+main

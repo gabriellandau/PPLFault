@@ -93,7 +93,7 @@ PoC that achieves arbitrary code execution as WinTcb-Light without the CloudFilt
 
 ## Tested Platforms
 
-|  | Windows 11 22H2 22621.1555 (April 2023) | Windows 11 Insider Canary 25346.1001 (April 2023) |
+|  | Windows 11 22H2 22621.1702 (May 2023) | Windows 11 Insider Canary 25346.1001 (April 2023) |
 | - | - | - |
 | PPLFault | ✔️ | ✔️ |
 | GodFault | ✔️ | ❌ Insider PreviousMode mitigation [bugchecks](https://twitter.com/GabrielLandau/status/1597001955909697536?s=20) |

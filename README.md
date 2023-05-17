@@ -100,7 +100,7 @@ PoC that achieves arbitrary code execution as WinTcb-Light without the CloudFilt
 
 # License
 
-Silhouette is covered by the [ELv2 license](LICENSE.txt).  It uses [phnt](https://github.com/winsiderss/systeminformer/tree/25846070780183848dc8d8f335a54fa6e636e281/phnt) from SystemInformer under the [MIT license](phnt/LICENSE.txt).
+PPLFault is covered by the [ELv2 license](LICENSE.txt).  It uses [phnt](https://github.com/winsiderss/systeminformer/tree/25846070780183848dc8d8f335a54fa6e636e281/phnt) from SystemInformer under the [MIT license](phnt/LICENSE.txt).
 
 # Credits
 Inspired by [PPLdump](https://github.com/itm4n/PPLdump) by [Clément Labro](https://infosec.exchange/@itm4n), which Microsoft [patched](https://itm4n.github.io/the-end-of-ppldump/) in July 2022.

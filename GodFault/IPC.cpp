@@ -158,7 +158,7 @@ bool BlessThread(DWORD dwThreadId, bool bFatal)
         goto Cleanup;
     }
 
-    Log(Info, "Thread %u (KTHREAD %p) has been blessed", dwThreadId, pThread);
+    Log(Info, "Thread %u (KTHREAD %p) has been blessed by GodFault", dwThreadId, pThread);
     bResult = true;
 
 Cleanup:

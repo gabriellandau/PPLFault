@@ -4,6 +4,8 @@ By [Gabriel Landau](https://twitter.com/GabrielLandau) at [Elastic Security](htt
 
 From [PPLdump Is Dead. Long Live PPLdump!](https://www.blackhat.com/asia-23/briefings/schedule/#ppldump-is-dead-long-live-ppldump-31052) presented at [Black Hat Asia 2023](https://www.blackhat.com/asia-23).
 
+[![PPLdump Is Dead. Long Live PPLdump!](http://img.youtube.com/vi/5xteW8Tm410/0.jpg)](http://www.youtube.com/watch?v=5xteW8Tm410 "PPLdump Is Dead. Long Live PPLdump!")
+
 ## PPLFault
 
 Exploits a TOCTOU in Windows Code Integrity to achieve arbitrary code execution as WinTcb-Light then dump a specified process.  For more details on the exploit, see my [slides](http://i.blackhat.com/Asia-23/AS-23-Landau-PPLdump-Is-Dead-Long-Live-PPLdump.pdf) and/or [talk](https://x.com/GabrielLandau/status/1707773387731272085).

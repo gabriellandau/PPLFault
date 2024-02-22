@@ -8,6 +8,8 @@ From [PPLdump Is Dead. Long Live PPLdump!](https://www.blackhat.com/asia-23/brie
 
 ## PPLFault
 
+**2024-02 UPDATE: Microsoft patched PPLFault on 2024-02-13.  See [this thread](https://x.com/GabrielLandau/status/1757818200127946922?s=20) for related discussion.**
+
 Exploits a TOCTOU in Windows Code Integrity to achieve arbitrary code execution as WinTcb-Light then dump a specified process.  For more details on the exploit, see my [slides](http://i.blackhat.com/Asia-23/AS-23-Landau-PPLdump-Is-Dead-Long-Live-PPLdump.pdf) and/or [talk](https://x.com/GabrielLandau/status/1707773387731272085).
 
 ### Example Output
